@@ -2,7 +2,7 @@ section {
     padding-top: 40px;
 }
 .container {
-    background: gray;
+    background-image: linear-gradient(to right top, #5b1f1f, #6f2e2e, #833e3e, #974e4e, #ac5f5f, #ac5d62, #ab5b64, #aa5967, #92455c, #7a3252, #612047, #480f3c);
     max-width: 1140px;
     padding: 0 15px;
     margin: 0 auto;
@@ -19,7 +19,7 @@ section {
     margin: 100px 0;
     height: 500px;
     width: 800px;
-    background: black;
+    background-image: linear-gradient(to right top, #090909, #0f0f0f, #141414, #181818, #1c1c1c, #1d1d1e, #1e1d1f, #1f1e21, #1e1c21, #1e1920, #1e161f, #1f131d);
     border-radius: 10px;
     position: relative;
     z-index: auto;
@@ -29,7 +29,8 @@ section {
     opacity: 0;
     width: 100px;
     height: 100px;
-    background: white;
+    background: url('../img/ball-bg.jpg') no-repeat center;
+    background-size: cover;
     border-radius: 50%;
     position: relative;
     z-index: 10;
