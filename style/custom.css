@@ -53,6 +53,10 @@ section {
         left: 0px;
         top: 0px;
     }
+    15% {
+        left: 50px;
+        top: 0px;
+    }
     24% {
         left: 120px;
         top: 380px;
@@ -73,26 +77,45 @@ section {
         left: 300px;
         top: 400px;
     }
-    60% {
+    55% {
         left: 400px;
         top: 200px;
     }
-    74% {
+    64% {
         left: 500px;
         top: 390px;
     }
-    75% {
+    65% {
         left: 500px;
         top: 400px;
     }
-    90% {
+    75% {
         left: 600px;
         top: 300px;
     }
-    97% {
-        opacity: 0.3;
+    81% {
         left: 650px;
         top: 400px;
+    }
+    83% {
+        left: 660px;
+        top: 390px;
+    }
+    85% {
+        left: 670px;
+        top: 400px;
+        opacity: 1;
+    }
+    87% {
+        left: 680px;
+        top: 395px;
+    }
+    89% {
+        left: 690px;
+        top: 400px;
+    }
+    95% {
+        left: 720px;
     }
     100% {
         opacity: 0;
@@ -137,34 +160,139 @@ section {
         background-size: 120% 120%;
         transform: rotate(720deg);
     }
-    74% {
+    64% {
         height: 100px;
         background-size: 120% 120%;
-        transform: rotate(1080deg);
+        transform: rotate(900deg);
     }
-    75% {
+    65% {
         height: 85px;
         background-size: 120% 115%;
     }
-    79% {
+    69% {
+        height: 100px;
+        background-size: 120% 120%;
+        transform: rotate(900deg);
+    }
+    80% {
         height: 100px;
         background-size: 120% 120%;
         transform: rotate(1080deg);
     }
-    94% {
-        height: 95px;
-        background-size: 120% 117%;
-        transform: rotate(1260deg);
-    }
-    95% {
+    81% {
         height: 100px;
         background-size: 120% 120%;
-        transform: rotate(1260deg);
+    }
+    82% {
+        height: 100px;
+        background-size: 120% 120%;
+        transform: rotate(1080deg);
     }
     100% {
-        opacity: 1;
         height: 100px;
         background-size: 120% 120%;
-        transform: rotate(1350deg);
+        transform: rotate(1180deg);
+    }
+}
+
+/* Ball Shadow */
+
+.ball-shadow_wrap {
+    height: 100px;
+    width: 800px;
+    padding-left: 120px;
+    background-image: linear-gradient(to right, #373737, #2e2e2e, #262626, #1e1e1e, #161616);
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.ball-shadow {
+    opacity: 0;
+    margin: 40px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 30px rgba(255, 255, 255, 1);
+    position: relative;
+    animation: shadow-run;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shadow-run {
+    0% {
+        opacity: 0;
+        left: 0px;
+        box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 1);
+    }
+    15% {
+        opacity: 0;
+        left: 120px;
+        box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 1);
+    }
+    24% {
+        opacity: 0.3;
+        left: 120px;
+    }
+    25% {
+        left: 120px;
+        box-shadow: 0px 0px 20px 40px rgba(255, 255, 255, 1);
+    }
+    35% {
+        left: 200px;
+        box-shadow: 0px 0px 20px 25px rgba(255, 255, 255, 1);
+    }
+    44% {
+        left: 300px;
+    }
+    45% {
+        left: 300px;
+        box-shadow: 0px 0px 20px 40px rgba(255, 255, 255, 1);
+    }
+    55% {
+        left: 400px;
+        box-shadow: 0px 0px 20px 30px rgba(255, 255, 255, 1);
+    }
+    64% {
+        left: 500px;
+    }
+    65% {
+        left: 500px;
+        box-shadow: 0px 0px 20px 40px rgba(255, 255, 255, 1);
+    }
+    75% {
+        left: 600px;
+        box-shadow: 0px 0px 20px 35px rgba(255, 255, 255, 1);
+    }
+    81% {
+        opacity: 0.3;
+        left: 650px;
+    }
+    83% {
+        left: 660px;
+        top: 390px;
+    }
+    85% {
+        left: 670px;
+    }
+    87% {
+        left: 680px;
+    }
+    89% {
+        left: 690px;
+    }
+    95% {
+        left: 720px;
+    }
+    100% {
+        opacity: 0;
+        left: 700px;
+        box-shadow: 0px 0px 20px 40px rgba(255, 255, 255, 1);
     }
 }
