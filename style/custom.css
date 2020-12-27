@@ -30,11 +30,11 @@ section {
     width: 100px;
     height: 100px;
     background: url('../img/ball-bg.jpg') no-repeat center;
-    background-size: cover;
+    background-size: 120% 120%;
     border-radius: 50%;
     position: relative;
     z-index: 10;
-    animation: ball-run, ball-squeeze, ball-rotate;
+    animation: ball-run, ball-squeeze-rotate;
     animation-iteration-count: infinite;
     animation-delay: 2s;
     animation-duration: 10s;
@@ -98,5 +98,73 @@ section {
         opacity: 0;
         left: 700px;
         top: 400px;
+    }
+}
+
+@keyframes ball-squeeze-rotate {
+    0% {
+        height: 100px;
+    }
+    4% {
+        height: 100px;
+        transform: rotate(0deg);
+    }
+    24% {
+        height: 100px;
+        background-size: 120% 120%;
+        transform: rotate(360deg);
+    }
+    25% {
+        height: 80px;
+        background-size: 120% 110%;
+    }
+    29% {
+        height: 100px;
+        background-size: 120% 120%;
+        transform: rotate(360deg);
+    }
+    44% {
+        height: 100px;
+        background-size: 120% 120%;
+        transform: rotate(720deg);
+    }
+    45% {
+        height: 83px;
+        background-size: 120% 113%;
+    }
+    49% {
+        height: 100px;
+        background-size: 120% 120%;
+        transform: rotate(720deg);
+    }
+    74% {
+        height: 100px;
+        background-size: 120% 120%;
+        transform: rotate(1080deg);
+    }
+    75% {
+        height: 85px;
+        background-size: 120% 115%;
+    }
+    79% {
+        height: 100px;
+        background-size: 120% 120%;
+        transform: rotate(1080deg);
+    }
+    94% {
+        height: 95px;
+        background-size: 120% 117%;
+        transform: rotate(1260deg);
+    }
+    95% {
+        height: 100px;
+        background-size: 120% 120%;
+        transform: rotate(1260deg);
+    }
+    100% {
+        opacity: 1;
+        height: 100px;
+        background-size: 120% 120%;
+        transform: rotate(1350deg);
     }
 }
