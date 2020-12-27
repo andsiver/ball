@@ -37,7 +37,7 @@ section {
     animation: ball-run, ball-squeeze-rotate;
     animation-iteration-count: infinite;
     animation-delay: 2s;
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
@@ -54,7 +54,7 @@ section {
         top: 0px;
     }
     15% {
-        left: 50px;
+        left: 120px;
         top: 0px;
     }
     24% {
@@ -90,32 +90,32 @@ section {
         top: 400px;
     }
     75% {
-        left: 600px;
+        left: 550px;
         top: 300px;
     }
     81% {
-        left: 650px;
+        left: 600px;
         top: 400px;
     }
     83% {
-        left: 660px;
+        left: 610px;
         top: 390px;
     }
     85% {
-        left: 670px;
+        left: 620px;
         top: 400px;
         opacity: 1;
     }
     87% {
-        left: 680px;
+        left: 630px;
         top: 395px;
     }
     89% {
-        left: 690px;
+        left: 640px;
         top: 400px;
     }
     95% {
-        left: 720px;
+        left: 700px;
     }
     100% {
         opacity: 0;
@@ -149,7 +149,7 @@ section {
     44% {
         height: 100px;
         background-size: 120% 120%;
-        transform: rotate(720deg);
+        transform: rotate(540deg);
     }
     45% {
         height: 83px;
@@ -158,41 +158,51 @@ section {
     49% {
         height: 100px;
         background-size: 120% 120%;
-        transform: rotate(720deg);
+        transform: rotate(540deg);
     }
     64% {
         height: 100px;
         background-size: 120% 120%;
-        transform: rotate(900deg);
+        transform: rotate(720deg);
     }
     65% {
-        height: 85px;
-        background-size: 120% 115%;
+        height: 95px;
+        background-size: 120% 117%;
     }
-    69% {
+    67% {
         height: 100px;
         background-size: 120% 120%;
-        transform: rotate(900deg);
+        transform: rotate(720deg);
     }
     80% {
         height: 100px;
         background-size: 120% 120%;
-        transform: rotate(1080deg);
+        transform: rotate(900deg);
     }
     81% {
-        height: 100px;
-        background-size: 120% 120%;
+        height: 99px;
+        background-size: 120% 119%;
     }
     82% {
         height: 100px;
         background-size: 120% 120%;
-        transform: rotate(1080deg);
+        transform: rotate(900deg);
     }
     100% {
         height: 100px;
         background-size: 120% 120%;
-        transform: rotate(1180deg);
+        transform: rotate(1080deg);
     }
+}
+
+.ball_wrap i {
+    font-size: 200px;
+    color: #92455c;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.397);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 20;
 }
 
 /* Ball Shadow */
@@ -220,7 +230,7 @@ section {
     animation: shadow-run;
     animation-iteration-count: infinite;
     animation-delay: 2s;
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
@@ -267,28 +277,27 @@ section {
         box-shadow: 0px 0px 20px 40px rgba(255, 255, 255, 1);
     }
     75% {
-        left: 600px;
+        left: 550px;
         box-shadow: 0px 0px 20px 35px rgba(255, 255, 255, 1);
     }
     81% {
-        opacity: 0.3;
-        left: 650px;
+        left: 600px;
     }
     83% {
-        left: 660px;
-        top: 390px;
+        left: 610px;
     }
     85% {
-        left: 670px;
+        left: 620px;
     }
     87% {
-        left: 680px;
+        left: 630px;
     }
     89% {
-        left: 690px;
+        left: 640px;
     }
     95% {
-        left: 720px;
+        opacity: 0.3;
+        left: 700px;
     }
     100% {
         opacity: 0;
