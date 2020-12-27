@@ -1,7 +1,101 @@
-/* -- General wrapper -- */
-
+section {
+    padding-top: 40px;
+}
 .container {
+    background: gray;
     max-width: 1140px;
     padding: 0 15px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.ball_wrap {
+    display: flex;
+    padding: 50px 0 50px 120px;
+    margin: 100px 0;
+    height: 500px;
+    width: 800px;
+    background: black;
+    border-radius: 10px;
+    position: relative;
+    z-index: auto;
+}
+
+.ball {
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
+    animation: ball-run, ball-squeeze, ball-rotate;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ball-run {
+    0% {
+        opacity: 0;
+        left: 0px;
+        top: 0px;
+    }
+    3% {
+        opacity: 1;
+        left: 0px;
+        top: 0px;
+    }
+    24% {
+        left: 120px;
+        top: 380px;
+    }
+    25% {
+        left: 120px;
+        top: 400px;
+    }
+    35% {
+        left: 200px;
+        top: 150px;
+    }
+    44% {
+        left: 300px;
+        top: 380px;
+    }
+    45% {
+        left: 300px;
+        top: 400px;
+    }
+    60% {
+        left: 400px;
+        top: 200px;
+    }
+    74% {
+        left: 500px;
+        top: 390px;
+    }
+    75% {
+        left: 500px;
+        top: 400px;
+    }
+    90% {
+        left: 600px;
+        top: 300px;
+    }
+    97% {
+        opacity: 0.3;
+        left: 650px;
+        top: 400px;
+    }
+    100% {
+        opacity: 0;
+        left: 700px;
+        top: 400px;
+    }
 }
